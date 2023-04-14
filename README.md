@@ -1,0 +1,2 @@
+This is a personal repository to test various styling and animations in the react format, each react app has a very simple but specific use
+and will be used by me in the future as a reference for other web projects.
