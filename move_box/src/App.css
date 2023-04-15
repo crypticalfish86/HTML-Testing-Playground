@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+  display: flex;
+}
+
+
+#blue_box_parent_1
+{
+  background-color: blue;
+  height: 20rem;
+  width: 20rem;
+  border: solid green 0.3rem;
+  margin: 0.2rem;
+}
+#red_box_child_1
+{
+  background-color: red;
+  height: 50%;
+  width: 50%;
+}
+#blue_box_parent_1:hover #red_box_child_1
+/*when hovering over blue box parent red box child moves to center*/
+{
+  transform: translate(50%, 50%);
+}
+
+
+#blue_box_parent_2
+{
+  background-color: blue;
+  height: 20rem;
+  width: 20rem;
+  border: solid green 0.3rem;
+  margin: 0.2rem;
+}
+#red_box_child_2A
+{
+  border: solid black 0.1rem;
+  height: 50%;
+  width: 50%;
+  background-color: red;
+  transition: transform 2s; /*makes sure IF there is a transform then it will take 1s to complete instead of instant */
+}
+#blue_box_parent_2:hover #red_box_child_2A
+/*translates the child to the edge of the parent div (coupled with the above transition it's smooth */
+{
+  transform: translateX(100%);
+}
+#red_box_child_2B
+{
+  border: solid black 0.1rem;
+  height: 50%;
+  width: 50%;
+  background-color: red;
+  transition: transform 2s;
+}
+#blue_box_parent_2:hover #red_box_child_2B
+{
+  transform: translateX(2rem);
+}
