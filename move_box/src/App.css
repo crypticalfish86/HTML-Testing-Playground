@@ -81,6 +81,7 @@
 
 #blue_box_parent_3:hover #red_box_child_3A
 {
-  height: 100%;
+  height: 100%; 
+  /*you can add height to the on hover css block like this to change the size and expand div */
   transform: translateX(100%);
 }
