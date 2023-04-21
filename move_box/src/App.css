@@ -2,9 +2,7 @@
   text-align: center;
   display: flex;
 }
-
-
-#blue_box_parent_1
+.blue_box_parent
 {
   background-color: rgb(12, 22, 94);
   height: 20rem;
@@ -12,12 +10,14 @@
   border: solid green 0.3rem;
   margin: 0.2rem;
 }
-#red_box_child_1
+.red_box_child
 {
   background-color: rgb(255, 93, 117);
   height: 50%;
   width: 50%;
 }
+
+
 #blue_box_parent_1:hover #red_box_child_1
 /*when hovering over blue box parent red box child moves to center*/
 {
@@ -26,20 +26,8 @@
 }
 
 
-#blue_box_parent_2
-{
-  background-color: rgb(12, 22, 94);
-  height: 20rem;
-  width: 20rem;
-  border: solid green 0.3rem;
-  margin: 0.2rem;
-}
 #red_box_child_2A
 {
-  border: solid black 0.1rem;
-  height: 50%;
-  width: 50%;
-  background-color: rgb(255, 93, 117);
   transition: transform 2s; /*makes sure IF there is a transform then it will take 1s to complete instead of instant */
 }
 #blue_box_parent_2:hover #red_box_child_2A
@@ -47,12 +35,9 @@
 {
   transform: translateX(100%);
 }
+
 #red_box_child_2B
 {
-  border: solid black 0.1rem;
-  height: 50%;
-  width: 50%;
-  background-color: rgb(255, 93, 117);
   transition: transform 2s;
 }
 #blue_box_parent_2:hover #red_box_child_2B
@@ -61,27 +46,28 @@
 }
 
 
-#blue_box_parent_3
-{
-  background-color: rgb(12, 22, 94);
-  height: 20rem;
-  width: 20rem;
-  border: solid green 0.3rem;
-  margin: 0.2rem;
-}
-#red_box_child_3A
-{
-  border: solid black 0.1rem;
-  height: 50%;
-  width: 50%;
-  background-color: rgb(255, 93, 117);
-  transition:  0.2s;
-  overflow: hidden;
-}
 
-#blue_box_parent_3:hover #red_box_child_3A
+#red_box_child_3
+{
+  transition:  2s;
+}
+#blue_box_parent_3:hover #red_box_child_3
 {
   height: 100%; 
   /*you can add height to the on hover css block like this to change the size and expand div */
   transform: translateX(100%);
+}
+
+
+.expand_red_box_child_4 /*not initially assigned to a div but will be once a button is clicked*/
+{
+  animation-name: expandBox; /*names the animation you want to use */
+  animation-duration: 2s; /*determines how long animation should take */
+  animation-fill-mode: forwards; /*dictates that once animation is complete it should maintain at its end state instead of reverting back */
+}
+
+@keyframes expandBox /*@keyframes is used to define animations*/
+{
+  from {height: 50%}
+  to {height: 100%};
 }
