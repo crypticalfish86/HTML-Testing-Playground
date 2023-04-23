@@ -15,3 +15,7 @@ and will be used by me in the future as a reference for other web projects.
     This was an issue with animation that was a large problem for me for a while but now i have figured out how to properly expand a box with actual
     content inside using smooth animation.
     dependencies: react
+
+4. on_render_move_box
+    First attempt at having animations begin when a specific part of the page is rendered instead of immediatley on website launch or on the click of
+    a button.
