@@ -1,3 +1,32 @@
 .App {
   text-align: center;
 }
+
+.Top_Div
+{
+  background-color: #E6B31E;
+  height: 200rem;
+  width: 100%;
+}
+
+.animated_div
+{
+  height: 10rem;
+  width: 12rem;
+  background-color: #343434;
+  transition: 2s;
+}
+
+#Animated
+{
+  background-color: aqua;
+  width: 100%;
+  animation-fill-mode: forwards;
+}
+
+.Bottom_Div
+{
+  background-color: #E6B31E;
+  height: 200rem;
+  width: 100%;
+}
