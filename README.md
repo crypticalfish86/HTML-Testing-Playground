@@ -21,3 +21,10 @@ and will be used by me in the future as a reference for other web projects.
     of the page is observed instead of immediatley on website 
     launch or on the click of a button.
     dependencies: react
+
+5. percentage_observation_box
+    A box displaying percentages in text of how much of the box is 
+    observed by the user at any given time, first use of functions 
+    like setInterval which are used to rerun code within a 
+    useEffect hook to constantly monitor the observation
+    dependencies: react

@@ -4,7 +4,7 @@ import { useRef, useEffect } from 'react';
 function App() {
 
   const animated_div = useRef(null); 
-  //useRef is used to refer to a div AFTER the DOM has finished loading so its reccomended in react because react uses a virtual DOM.
+  //useRef is used to refer to a div AFTER the DOM has finished loading so its reccomended in react because react uses a virtual DOM on top of the regular DOM.
   console.log(animated_div.current);
 
   useEffect(() =>
@@ -18,7 +18,7 @@ function App() {
           if(entry.isIntersecting)
           {
             entry.target.setAttribute('id', 'Animated');
-            observer.unobserve(entry.target);
+            observer.unobserve(entry.target); //this allows us to remove a div from observation (useful to prevent a callback executing again and for performance)
           }
         });
     });
