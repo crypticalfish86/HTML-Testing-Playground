@@ -1,0 +1,29 @@
+.App {
+  text-align: center;
+  overflow-x: hidden; 
+  /* overflow-x:hidden; ensures content that goes outside of the rendered parents is hidden in the right-left direction allowing us to give 
+  the illusion of the box appearing offscreen*/
+}
+
+.Parent_Box
+{
+  margin: auto;
+  height: 30rem;
+  width: 40rem;
+  background-color: rgb(29, 152, 29);
+}
+.Child_Transition_Box
+{
+  position: relative;
+  right: -200%; /*this negative overflow means it will be outside the parent box 200% of the parent boxes width to the right*/
+  top:10rem;
+  height: 10rem;
+  width: 20rem;
+  background-color: rgb(134, 19, 19);
+  transition: transform 3s;
+}
+
+.Child_Transition_Box#Begin_Box_Transition
+{
+  transform: translateX(-350%); /*brings in the box to the center of the parent */
+}

@@ -28,3 +28,11 @@ and will be used by me in the future as a reference for other web projects.
     like setInterval which are used to rerun code within a 
     useEffect hook to constantly monitor the observation
     dependencies: react
+
+6. offscreen_box_transition
+    A box initially offscreen that slides in from offscreen onto a parent div
+    first look at negative position (in this case position: relative; right: -200%)
+    negative relative positions are positions that begin outside of the parent div box.
+    additional use of overflow-x:hidden; to ensure the box is not rendered on page and can't be scrolled to
+    giving the illusion of it appearing from offscreen
+    dependencies: react
