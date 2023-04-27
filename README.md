@@ -36,3 +36,7 @@ and will be used by me in the future as a reference for other web projects.
     additional use of overflow-x:hidden; to ensure the box is not rendered on page and can't be scrolled to
     giving the illusion of it appearing from offscreen
     dependencies: react
+
+7. bounding_client_rect_box_transition
+    first attempt at using getBoundingClientRect() function in order to simulate a box transition, in a more modern
+    way than using the intersectionObserver object.
